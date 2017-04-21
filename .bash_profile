@@ -15,7 +15,7 @@ export PATH="$HOME/Scripts/ncbi-blast-2.4.0/bin:$PATH";
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_prompt}; do
+for file in ~/.{path,bash_prompt,aliases,osx,functions}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
